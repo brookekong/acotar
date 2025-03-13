@@ -1,7 +1,7 @@
 const questions = [
     {
         question: "1/12: You arrive on Inferno island with nothing but your best outfit.",
-        image: "img/inferno.webp",
+        image: "img/Velaris.webp",
         answers: {
             E: {
                 text: "I’m excited to meet the other contestants.",
@@ -15,7 +15,7 @@ const questions = [
     },
     {
         question: "2/12: The contestant next to you is dressed well!",
-        image: "img/inferno.webp",
+        image: "img/Velaris.webp",
         answers: {
             S: {
                 text: "They have a really good sense of style.",
@@ -29,7 +29,7 @@ const questions = [
     },
     {
         question: "3/12: You are all told you must perform manual labor yourselves in order to eat and drink. It’s getting dark soon.",
-        image: "img/inferno.webp",
+        image: "img/Velaris.webp",
         answers: {
             T: {
                 text: "I think we should separate the group and assign tasks.",
@@ -43,7 +43,7 @@ const questions = [
     },
     {
         question: "4/12: Your job is to get water a mile away with two other contestants.",
-        image: "img/inferno.webp",
+        image: "img/Velaris.webp",
         answers: {
             J: {
                 text: "I grab a map to see the quickest way to get there.",
@@ -57,7 +57,7 @@ const questions = [
     },
     {
         question: "5/12: The group starts cooking, what is your role?",
-        image: "img/inferno.webp",
+        image: "img/Velaris.webp",
         answers: {
             S: {
                 text: "We need vegetables in our meal, so I start cutting the carrots.",
@@ -71,7 +71,7 @@ const questions = [
     },
     {
         question: "6/12: There's two hours before lights out and it's time to get ready for bed.",
-        image: "img/inferno.webp",
+        image: "img/Velaris.webp",
         answers: {
             J: {
                 text: "I immediately get ready for bed.",
@@ -85,7 +85,7 @@ const questions = [
     },
     {
         question: "7/12: It's the end of the first day. How do you process how the day went?",
-        image: "img/inferno.webp",
+        image: "img/Velaris.webp",
         answers: {
             T: {
                 text: "There was someone I was interested in I didn’t get to talk to. I think I should make an effort to talk to them tomorrow.",
@@ -99,7 +99,7 @@ const questions = [
     },
     {
         question: "8/12: They announce that you and the group will participate in a challenge.",
-        image: "img/inferno.webp",
+        image: "img/Velaris.webp",
         answers: {
             N: {
                 text: "I’m excited for the possibility of winning and going to paradise with the person I’m interested in.",
@@ -113,7 +113,7 @@ const questions = [
     },
     {
         question: "9/12: You won the challenge! You know you will be going to Paradise soon, how will you be spending your free time?",
-        image: "img/inferno.webp",
+        image: "img/Velaris.webp",
         answers: {
             E: {
                 text: "Actively talk to others so you can make your decision on who you want to invite.",
@@ -127,7 +127,7 @@ const questions = [
     },
     {
         question: "10/12: You’re in paradise with your paradise partner. There's a hot tub, dinner on a yacht, jet ski, and a carnival date. You can pick two activities to do.",
-        image: "img/inferno.webp",
+        image: "img/Velaris.webp",
         answers: {
             J: {
                 text: "Let's decide what we're going to do for the evening.",
@@ -142,7 +142,7 @@ const questions = [
     },
     {
         question: "11/12: It’s dinner time and you want to get to know the person better.",
-        image: "img/inferno.webp",
+        image: "img/Velaris.webp",
         answers: {
             F: {
                 text: "I ask simple intro questions to warm up the conversation and make them feel comfortable.",
@@ -156,7 +156,7 @@ const questions = [
     },
     {
         question: "12/12: Back at Inferno...you think the date went well. How do you process how Paradise went?",
-        image: "img/inferno.webp",
+        image: "img/Velaris.webp",
         answers: {
             I: {
                 text: "Take time to process how you feel about this person.",
@@ -170,7 +170,7 @@ const questions = [
     },
     {
         question: "13/12: You hear an alarm and then wake up!",
-        image: "img/inferno.webp",
+        image: "img/Velaris.webp",
         answers: {
             K: {
                 text: "Aww mannnnnn...I was just getting to the good part.",
