@@ -184,52 +184,52 @@ const questions = [
 
 const resultOptions = {
     "ISTJ": {
-        image: "9Dongho.png",
+        image: "9Azriel.png",
     },
     "ISFJ": {
-        image: "inferno.webp"
+        image: "10Tamlin.png"
     },
     "INFJ": {
-        image: "5Hyunjoong.png"
+        image: "5Suriel.png"
     },
     "INTJ": {
-        image: "1Gyuri.png"
+        image: "1Nesta.png"
     },
     "ISTP": {
-        image: "13Jinyoung.png"
+        image: "13Thesan.png"
     },
     "ISFP": {
-        image: "14Seulki.png"
+        image: "14Feyre.png"
     },
     "INFP": {
-        image: "6Jiyeon.png"
+        image: "6Elain.png"
     },
     "INTP": {
-        image: "2Junseo.png"
+        image: "2Amren.png"
     },
     "ESTP": {
-        image: "15Taeoh.png"
+        image: "15Helion.png"
     },
     "ESFP": {
-        image: "16Jia.png"
+        image: "16Cassian.png"
     },
     "ENFP": {
-        image: "8Hyeseon.png"
+        image: "8Mor.png"
     },
     "ENTP": {
-        image: "4Gwanhee.png"
+        image: "4Eris.png"
     },
     "ESTJ": {
-        image: "11Sehoon.png"
+        image: "11Hybern.png"
     },
     "ESFJ": {
-        image: "12Hanbin.png"
+        image: "12Lucien.png"
     },
     "ENFJ": {
-        image: "7Sian.png"
+        image: "7Rhysand.png"
     },
     "ENTJ": {
-        image: "3Soyeon.png"
+        image: "3Amarantha.png"
     },
 
 };

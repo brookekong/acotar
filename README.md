@@ -1,9 +1,9 @@
 ## Hi there 👋
 
-This is my attempt at a personality quiz using contestants from seasons 1-4 of Singles Inferno Netflix.
+This is my attempt at a personality quiz using ACOTAR characters.
 
-📝 Started Feb 19, 2025
-📋 Updated Mar 10, 2025
+📝 Started Mar 10, 2025
+📋 Updated Mar 13, 2025
 
 🌱 index.html file
 - this file will contain the quiz title, photos, and questions.
