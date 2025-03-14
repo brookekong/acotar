@@ -246,7 +246,7 @@ function displayQuestion() {
             html += `<img src="${question.image}" alt="Question ${currentQuestion + 1}">`;
         }
         for (const option in question.answers) {
-            html += `<button class="large-rectangular" value="${option}" id="${option}">${question.answers[option].text}</button>`;
+            html += `<button class="answers-button" value="${option}" id="${option}">${question.answers[option].text}</button>`;
         }
         quizElement.innerHTML = html;
         attachButtonClickHandlers();
@@ -268,7 +268,7 @@ document.getElementById('start-button').addEventListener('click', function() {
 
 
 function attachButtonClickHandlers() {
-    const choiceButtons = document.querySelectorAll('.large-rectangular');
+    const choiceButtons = document.querySelectorAll('.answers-button');
     choiceButtons.forEach((button) => {
         button.addEventListener('click', handleAnswer);
     });
@@ -313,14 +313,8 @@ function showResult() {
     //each pair
     const result = pairs.map(pair => topLetters[pair]).join('');
 
-    // Generate the MBTI result string
-    console.log("Final MBTI Result:", result); // 🔍 Check what MBTI type is generated
-
     // Retrieve personality data from resultOptions
     const personalityData = resultOptions[result];
-    
-    console.log("Personality Data:", personalityData); // 🔍 Check if we get data
-    console.log("Expected Image Path:", "images/" + (personalityData?.image || "NOT_FOUND")); // 🔍 Debug image path
     
     if (personalityData) {
         resultTextContainer.innerHTML = `
@@ -335,20 +329,4 @@ function showResult() {
 
     document.getElementById('quiz').style.display = 'none'; // Hide the quiz
     document.getElementById('result').style.display = 'block'; // Show the result
-    document.getElementById('restart-button').style.display = 'block'; // Show the restart button
 }
-
-
-
-//Function to restart the quiz
-function restartQuiz() {
-    currentQuestion = 0;
-    userAnswers = {};
-    document.getElementById('result').style.display = 'none';
-    document.getElementById('quiz').style.display = 'block';
-    displayQuestion(); // Start the quiz from the beginning
-}
-
-document.getElementById('restart-button').addEventListener('click', restartQuiz);
-
-displayQuestion();
