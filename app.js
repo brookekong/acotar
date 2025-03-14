@@ -1,175 +1,175 @@
 const questions = [
     {
-        question: "1/12: You arrive on Inferno island with nothing but your best outfit.",
+        question: "1/12: You wake up in a cottage in the woods. A beastly creature with a lions body and horses head with antlers BURSTS through the door.",
         image: "img/Velaris.jpeg",
         answers: {
             E: {
-                text: "I’m excited to meet the other contestants.",
+                text: "WHAT! Ok let me try to talk to this...thing. Maybe he's not so bad.",
                 scores: { I: 0, E: +1 },
             },
             I: {
-                text: "I hope I have enough energy to make an impression.",
+                text: "If I don't move maybe he won't see me.",
                 scores: { I: +1, E: 0 },
             },
         },
     },
     {
-        question: "2/12: The contestant next to you is dressed well!",
+        question: "2/12: The beast claims that it is going to take you away to a place called Prythian.",
         image: "img/Velaris.jpeg",
         answers: {
-            S: {
-                text: "They have a really good sense of style.",
-                scores: { N: 0, S: +1 },
+            P: {
+                text: "Cool. I'll follow you!",
+                scores: { J: 0, P: +1 },
             },
-            N: {
-                text: "They seem like they’re put together.",
-                scores: { N: +1, S: 0 },
+            J: {
+                text: "Hold on...let me pack my bags! And call my mom first!",
+                scores: { J: +1, P: 0 },
             },
         },
     },
     {
-        question: "3/12: You are all told you must perform manual labor yourselves in order to eat and drink. It’s getting dark soon.",
+        question: "3/12: You are swept away into the air and land at the foot of steps leading up to a beautiful castle.",
         image: "img/Velaris.jpeg",
         answers: {
             T: {
-                text: "I think we should separate the group and assign tasks.",
+                text: "How is this possible? I need to know more about this place.",
                 scores: { T: +1, F: 0 },
             },
             F: {
-                text: "I think we should assign tasks with everyone's preferences in mind.",
+                text: "I'm so overwhelmed. WATS GOING ON?!",
                 scores: { T: 0, F: +1 },
             },
         },
     },
     {
-        question: "4/12: Your job is to get water a mile away with two other contestants.",
-        image: "img/Velaris.jpeg",
-        answers: {
-            J: {
-                text: "I grab a map to see the quickest way to get there.",
-                scores: { P: 0, J: +1 },
-            },
-            P: {
-                text: "I start walking with the group. We will eventually find our way there...",
-                scores: { P: +1, J: 0 },
-            },
-        },
-    },
-    {
-        question: "5/12: The group starts cooking, what is your role?",
+        question: "4/12: You enter the castle and the beast turns into a beautiful male with pointy ears. He looks elegant and there are shadows swirling around him.",
         image: "img/Velaris.jpeg",
         answers: {
             S: {
-                text: "We need vegetables in our meal, so I start cutting the carrots.",
-                scores: { S: +1, N: 0 },
-            },
-            N: {
-                text: "We only have a few ingredients... I throw out a few ideas on what we can make.",
-                scores: { S: 0, N: +1 },
-            },
-        },
-    },
-    {
-        question: "6/12: There's two hours before lights out and it's time to get ready for bed.",
-        image: "img/Velaris.jpeg",
-        answers: {
-            J: {
-                text: "I immediately get ready for bed.",
-                scores: { P: 0, J: +1 },
-            },
-            P: {
-                text: "I wind down and take my time getting ready for bed.",
-                scores: { P: +1, J: 0 },
-            },
-        },
-    },
-    {
-        question: "7/12: It's the end of the first day. How do you process how the day went?",
-        image: "img/Velaris.jpeg",
-        answers: {
-            T: {
-                text: "There was someone I was interested in I didn’t get to talk to. I think I should make an effort to talk to them tomorrow.",
-                scores: { T: +1, F: 0 }
-            },
-            F: {
-                text: "There's someone that I feel like I would get along with. I hope I can talk to them tomorrow and see if they feel the same way.",
-                scores: { T: 0, F: +1 },
-            },
-        },
-    },
-    {
-        question: "8/12: They announce that you and the group will participate in a challenge.",
-        image: "img/Velaris.jpeg",
-        answers: {
-            N: {
-                text: "I’m excited for the possibility of winning and going to paradise with the person I’m interested in.",
-                scores: { N: +1, S: 0 },
-            },
-            S: {
-                text: "I need to focus in this moment so I can win the challenge and go to paradise with the person I'm interested in..",
+                text: "He is dressed nicely. But why are those shadows doing that.",
                 scores: { N: 0, S: +1 },
             },
+            N: {
+                text: "This guy looks like he would have all the answers.",
+                scores: { N: +1, S: 0 },
+            },
         },
     },
     {
-        question: "9/12: You won the challenge! You know you will be going to Paradise soon, how will you be spending your free time?",
+        question: "5/12: The male introduces himself as Rhysand, High Lord of the Night Court. He tells you that your father was High Fae and highly respected in the Night Court as a general.",
         image: "img/Velaris.jpeg",
         answers: {
             E: {
-                text: "Actively talk to others so you can make your decision on who you want to invite.",
+                text: "Wha- tell me more! Let's talk about this! Can you show me more of this place?",
                 scores: { E: +1, I: 0 },
             },
             I: {
-                text: "Briefly go back to tent regroup and determine who you want to talk to next and potentially invite to Paradise.",
+                text: "Sorry Rhy-whatever your name is, I need a moment to digest this info. Is there somewhere I can sit?",
                 scores: { E: 0, I: +1 },
             },
         },
     },
     {
-        question: "10/12: You’re in paradise with your paradise partner. There's a hot tub, dinner on a yacht, jet ski, and a carnival date. You can pick two activities to do.",
+        question: "6/12: After some time with the High Lord, you learn that you have inherited hidden powers valuable for the war against an evil Queen.",
         image: "img/Velaris.jpeg",
         answers: {
-            J: {
-                text: "Let's decide what we're going to do for the evening.",
-                scores: { J: +1, P: 0 },
-            },
             P: {
-                text: "Let’s see where the night takes us.",
-                scores: { J: 0, P: +1 },
+                text: "If I'm here long enough, maybe the powers will come to me.",
+                scores: { P: +1, J: 0 },
+            },
+            J: {
+                text: "I need to get to work tomorrow and train to use my powers.",
+                scores: { P: 0, J: +1 },
+            },
+        },
+    },
+    {
+        question: "7/12: Rhysand tells you that the future of Prythian rests on your shoulders. He will enlist his inner circle to train you for the upcoming war starting tomorrow.",
+        image: "img/Velaris.jpeg",
+        answers: {
+            F: {
+                text: "I need to save everyone here. I can't let them down.",
+                scores: { T: 0, F: +1 },
+            },
+            T: {
+                text: "If I master my powers, I can help save this world.",
+                scores: { T: +1, F: 0 }
+            },
+        },
+    },
+    {
+        question: "8/12: It's the next day and you are led by a maid to the courtyard of the castle. You see a group of people laughing together.",
+        image: "img/Velaris.jpeg",
+        answers: {
+            N: {
+                text: "I wouldn't be surprised if they've been through sh*t together.",
+                scores: { N: +1, S: 0 },
+            },
+            S: {
+                text: "They seem like a really close bunch - an attractive bunch at that.",
+                scores: { N: 0, S: +1 },
+            },
+        },
+    },
+    {
+        question: "9/12: During training, a pretty female named Feyre demonstrates a move that conjures shadows that you can't seem to get right.",
+        image: "img/Velaris.jpeg",
+        answers: {
+            T: {
+                text: "HM. his doesn't make sense. I am doing the exact movement she is doing.",
+                scores: { T: +1, F: 0 },
+            },
+            F: {
+                text: "AGH. Maybe if I just try a little harder it will work.",
+                scores: { T: 0, F: +1 },
+            },
+        },
+    },
+    {
+        question: "10/12: You finally manifest a shadow out of your hand. The group cheers and Feyre says that you're done with training for the day.",
+        image: "img/Velaris.jpeg",
+        answers: {
+            I: {
+                text: "You guys hungry? Let's get something to eat.",
+                scores: { I: +1, E: 0 },
+            },
+            E: {
+                text: "I'm tired. See you guys later for dinner!",
+                scores: { I: 0, E: +1 },
             },
         },
 
     },
     {
-        question: "11/12: It’s dinner time and you want to get to know the person better.",
+        question: "11/12: At night, the Rhysand and Feyre bring you to the castle balcony and reveal that you have one month to prepare yourself for war and master your powers.",
         image: "img/Velaris.jpeg",
         answers: {
-            F: {
-                text: "I ask simple intro questions to warm up the conversation and make them feel comfortable.",
-                scores: { F: +1, T: 0 },
+            J: {
+                text: "One month? You better have a training plan prepped for me.",
+                scores: { J: +1, P: 0 },
             },
-            T: {
-                text: "I ask questions I need to know to see if we’re a good match.",
-                scores: { F: 0, T: +1 },
+            P: {
+                text: "Wuht. Eh I'll figure it out eventually.",
+                scores: { J: 0, P: +1 },
             },
         },
     },
     {
-        question: "12/12: Back at Inferno...you think the date went well. How do you process how Paradise went?",
+        question: "12/12: Suddenly, Rhysand pushes you off the balcony and shouts at you to use your wings!",
         image: "img/Velaris.jpeg",
         answers: {
-            I: {
-                text: "Take time to process how you feel about this person.",
-                scores: { E: 0, I: +1 },
+            N: {
+                text: "If I can somehow fly, I'm going to push HIM off this balcony.",
+                scores: { S: 0, N: +1 },
             },
-            E: {
-                text: "Talk through my initial thoughts with my roommates.",
-                scores: { E: +1, I: 0 },
+            S: {
+                text: "I have wings? I have WINGS! I have WINGSSSS!",
+                scores: { S: +1, N: 0 },
             },
         },
     },
     {
-        question: "13/12: You hear an alarm and then wake up!",
+        question: "13/12: You are falling...falling...falling...and you wake up in your bed with a JOLT.",
         image: "img/Velaris.jpeg",
         answers: {
             K: {
