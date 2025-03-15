@@ -1,6 +1,8 @@
+//Questions to Determine ACOTAR Character
+
 const questions = [
     {
-        question: "1/12: You wake up in a cottage in the woods. A beastly creature with a lions body and horses head with antlers BURSTS through the door.",
+        question: "1/12: You wake up in a cottage in the woods. A beastly creature with dark scales, wings, and talons BURSTS through the door.",
         image: "img/Velaris.jpeg",
         answers: {
             E: {
@@ -182,56 +184,25 @@ const questions = [
     },
 ];
 
-const resultOptions = {
-    "ISTJ": {
-        image: "9Azriel.png",
-    },
-    "ISFJ": {
-        image: "10Tamlin.png"
-    },
-    "INFJ": {
-        image: "5Suriel.png"
-    },
-    "INTJ": {
-        image: "1Nesta.png"
-    },
-    "ISTP": {
-        image: "13Thesan.png"
-    },
-    "ISFP": {
-        image: "14Feyre.png"
-    },
-    "INFP": {
-        image: "6Elain.png"
-    },
-    "INTP": {
-        image: "2Amren.png"
-    },
-    "ESTP": {
-        image: "15Helion.png"
-    },
-    "ESFP": {
-        image: "16Cassian.png"
-    },
-    "ENFP": {
-        image: "8Mor.png"
-    },
-    "ENTP": {
-        image: "4Eris.png"
-    },
-    "ESTJ": {
-        image: "11Hybern.png"
-    },
-    "ESFJ": {
-        image: "12Lucien.png"
-    },
-    "ENFJ": {
-        image: "7Rhysand.png"
-    },
-    "ENTJ": {
-        image: "3Amarantha.png"
-    },
+//MBTI and Character Match Up!
 
+const resultOptions = {
+    "INTJ": { image: "1Nesta.png" },
+    "INTP": { image: "2Amren.png" },
+    "ENTJ": { image: "3Amarantha.png" },
+    "ENTP": { image: "4Eris.png" },
+    "INFJ": { image: "5Suriel.png" },
+    "INFP": { image: "6Elain.png" },
+    "ENFJ": { image: "7Rhysand.png" },
+    "ENFP": { image: "8Mor.png" },
+    "ISTJ": { image: "9Azriel.png", },
+    "ISFJ": { image: "10Tamlin.png" },
+    "ESTJ": { image: "11Hybern.png" },
+    "ESFJ": { image: "12Lucien.png" },
+    "ISTP": { image: "13Thesan.png" },
+    "ISFP": { image: "14Feyre.png" },
+    "ESTP": { image: "15Helion.png" },
+    "ESFP": { image: "16Cassian.png" },
 };
 
 let currentQuestion = 0;
@@ -262,7 +233,6 @@ document.getElementById('start-button').addEventListener('click', function() {
     currentQuestion = 0;
     userAnswers = {};
     displayQuestion(); 
-    // userAnswers.userName = userName;
 });
 
 
@@ -310,10 +280,8 @@ function showResult() {
         topLetters[pair] = topOption;
     });
 
-    //each pair
     const result = pairs.map(pair => topLetters[pair]).join('');
 
-    // Retrieve personality data from resultOptions
     const personalityData = resultOptions[result];
     
     if (personalityData) {
@@ -322,11 +290,8 @@ function showResult() {
 
         resultImage.src = "img/"+personalityData.image;
         resultImage.alt = `${personalityData.image} Image`;
-    } else {
-        console.error("No personality data found for:", result);
-    
     }
 
-    document.getElementById('quiz').style.display = 'none'; // Hide the quiz
-    document.getElementById('result').style.display = 'block'; // Show the result
+    document.getElementById('quiz').style.display = 'none';
+    document.getElementById('result').style.display = 'block';
 }
