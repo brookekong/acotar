@@ -24,7 +24,7 @@ const questions = [
                 scores: { J: 0, P: +1 },
             },
             J: {
-                text: "Hold on...let me pack my bags! And call my mom first!",
+                text: "Hold on...let me pack my bags! And call out of work first!",
                 scores: { J: +1, P: 0 },
             },
         },
@@ -44,7 +44,7 @@ const questions = [
         },
     },
     {
-        question: "4/12: You enter the castle and the beast turns into a beautiful male with pointy ears. He looks elegant and there are shadows swirling around him.",
+        question: "4/12: You enter the castle and the beast turns into a beautiful male with pointy ears. He looks elegant and there are dark shadows swirling around him.",
         image: "img/Velaris.jpeg",
         answers: {
             S: {
@@ -86,15 +86,15 @@ const questions = [
         },
     },
     {
-        question: "7/12: Rhysand tells you that the future of Prythian rests on your shoulders. He will enlist his inner circle to train you for the upcoming war starting tomorrow.",
+        question: "7/12: Rhysand tells you that the future of Prythian rests on your shoulders. He will enlist his inner circle to train you starting tomorrow.",
         image: "img/Velaris.jpeg",
         answers: {
             F: {
-                text: "I need to save everyone here. I can't let them down.",
+                text: "AHH I need to save everyone here?! I can't let them down!",
                 scores: { T: 0, F: +1 },
             },
             T: {
-                text: "If I master my powers, I can help save this world.",
+                text: "If I master my powers, I can potentially defeat this evil Queen.",
                 scores: { T: +1, F: 0 }
             },
         },
@@ -104,7 +104,7 @@ const questions = [
         image: "img/Velaris.jpeg",
         answers: {
             N: {
-                text: "I wouldn't be surprised if they've been through sh*t together.",
+                text: "I wouldn't be surprised if they've been through a lot together.",
                 scores: { N: +1, S: 0 },
             },
             S: {
@@ -131,19 +131,19 @@ const questions = [
         question: "10/12: You finally manifest a shadow out of your hand. The group cheers and Feyre says that you're done with training for the day.",
         image: "img/Velaris.jpeg",
         answers: {
-            I: {
-                text: "You guys hungry? Let's get something to eat.",
-                scores: { I: +1, E: 0 },
-            },
             E: {
-                text: "I'm tired. See you guys later for dinner!",
+                text: "You guys hungry? Let's get something to eat.",
                 scores: { I: 0, E: +1 },
+            },
+            I: {
+                text: "I'm tired. See you guys later for dinner!",
+                scores: { I: +1, E: 0 },
             },
         },
 
     },
     {
-        question: "11/12: At night, the Rhysand and Feyre bring you to the castle balcony and reveal that you have one month to prepare yourself for war and master your powers.",
+        question: "11/12: At night, Rhysand and Feyre bring you to the castle balcony and reveal that you have one month to prepare yourself for war and master your powers.",
         image: "img/Velaris.jpeg",
         answers: {
             J: {
@@ -151,7 +151,7 @@ const questions = [
                 scores: { J: +1, P: 0 },
             },
             P: {
-                text: "Wuht. Eh I'll figure it out eventually.",
+                text: "Wuht. I guess I'll figure it out eventually.",
                 scores: { J: 0, P: +1 },
             },
         },
@@ -161,11 +161,11 @@ const questions = [
         image: "img/Velaris.jpeg",
         answers: {
             N: {
-                text: "If I can somehow fly, I'm going to push HIM off this balcony.",
+                text: "If I can somehow fly, I'm going to push HIM off this balcony. How did he know I had wings anyway?",
                 scores: { S: 0, N: +1 },
             },
             S: {
-                text: "I have wings? I have WINGS! I have WINGSSSS!",
+                text: "I have wings? I have WINGS! I have WINGSSSSSSSS!",
                 scores: { S: +1, N: 0 },
             },
         },
