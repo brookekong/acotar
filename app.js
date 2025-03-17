@@ -3,10 +3,10 @@
 const questions = [
     {
         question: "1/12: You wake up in a cottage in the woods. A beastly creature with dark scales, wings, and talons BURSTS through the door.",
-        image: "img/Velaris.jpeg",
+        image: "img/1Question.png",
         answers: {
             E: {
-                text: "WHAT! Ok let me try to talk to this...thing. Maybe he's not so bad.",
+                text: "WHAT! Ok let me try to talk to this...thing.",
                 scores: { I: 0, E: +1 },
             },
             I: {
@@ -17,21 +17,21 @@ const questions = [
     },
     {
         question: "2/12: The beast claims that it is going to take you away to a place called Prythian.",
-        image: "img/Velaris.jpeg",
+        image: "img/2Question.jpeg",
         answers: {
             P: {
                 text: "Cool. I'll follow you!",
                 scores: { J: 0, P: +1 },
             },
             J: {
-                text: "Hold on...let me pack my bags! And call out of work first!",
+                text: "Hold on...let me pack my bags. And call out of work first!",
                 scores: { J: +1, P: 0 },
             },
         },
     },
     {
         question: "3/12: You are swept away into the air and land at the foot of steps leading up to a beautiful castle.",
-        image: "img/Velaris.jpeg",
+        image: "img/3Question.png",
         answers: {
             T: {
                 text: "How is this possible? I need to know more about this place.",
@@ -45,7 +45,7 @@ const questions = [
     },
     {
         question: "4/12: You enter the castle and the beast turns into a beautiful male with pointy ears. He looks elegant and there are dark shadows swirling around him.",
-        image: "img/Velaris.jpeg",
+        image: "img/4Question.png",
         answers: {
             S: {
                 text: "He is dressed nicely. But why are those shadows doing that.",
@@ -59,21 +59,21 @@ const questions = [
     },
     {
         question: "5/12: The male introduces himself as Rhysand, High Lord of the Night Court. He tells you that your father was High Fae and highly respected in the Night Court as a general.",
-        image: "img/Velaris.jpeg",
+        image: "img/5Question.jpeg",
         answers: {
             E: {
                 text: "Wha- tell me more! Let's talk about this! Can you show me more of this place?",
                 scores: { E: +1, I: 0 },
             },
             I: {
-                text: "Sorry Rhy-whatever your name is, I need a moment to digest this info. Is there somewhere I can sit?",
+                text: "Sorry Rhy-whatever your name is, I need a moment to digest this. Is there somewhere I can sit?",
                 scores: { E: 0, I: +1 },
             },
         },
     },
     {
         question: "6/12: After some time with the High Lord, you learn that you have inherited hidden powers valuable for the war against an evil Queen.",
-        image: "img/Velaris.jpeg",
+        image: "img/6Question.png",
         answers: {
             P: {
                 text: "If I'm here long enough, maybe the powers will come to me.",
@@ -101,7 +101,7 @@ const questions = [
     },
     {
         question: "8/12: It's the next day and you are led by a maid to the courtyard of the castle. You see a group of people laughing together.",
-        image: "img/Velaris.jpeg",
+        image: "img/8Question.png",
         answers: {
             N: {
                 text: "I wouldn't be surprised if they've been through a lot together.",
@@ -115,10 +115,10 @@ const questions = [
     },
     {
         question: "9/12: During training, a pretty female named Feyre demonstrates a move that conjures shadows that you can't seem to get right.",
-        image: "img/Velaris.jpeg",
+        image: "img/9Question.png",
         answers: {
             T: {
-                text: "HM. his doesn't make sense. I am doing the exact movement she is doing.",
+                text: "HM. This doesn't make sense. I am doing the exact movement she is doing.",
                 scores: { T: +1, F: 0 },
             },
             F: {
@@ -144,7 +144,7 @@ const questions = [
     },
     {
         question: "11/12: At night, Rhysand and Feyre bring you to the castle balcony and reveal that you have one month to prepare yourself for war and master your powers.",
-        image: "img/Velaris.jpeg",
+        image: "img/11Question.jpeg",
         answers: {
             J: {
                 text: "One month? You better have a training plan prepped for me.",
@@ -158,10 +158,10 @@ const questions = [
     },
     {
         question: "12/12: Suddenly, Rhysand pushes you off the balcony and shouts at you to use your wings!",
-        image: "img/Velaris.jpeg",
+        image: "img/12Question.png",
         answers: {
             N: {
-                text: "If I can somehow fly, I'm going to push HIM off this balcony. How did he know I had wings anyway?",
+                text: "If I can somehow fly, I'm going to push HIM off this balcony.",
                 scores: { S: 0, N: +1 },
             },
             S: {
@@ -172,7 +172,7 @@ const questions = [
     },
     {
         question: "13/12: You are falling...falling...falling...and you wake up in your bed with a JOLT.",
-        image: "img/Velaris.jpeg",
+        image: "img/13Question.jpeg",
         answers: {
             K: {
                 text: "Aww mannnnnn...I was just getting to the good part.",
