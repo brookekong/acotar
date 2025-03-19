@@ -75,11 +75,7 @@ p {
     cursor: pointer;
 }
 
-.answers-button:hover {
-    background-color: #6E76B7;
-    color: #fff;
-}
-
+.answers-button:hover, 
 .answers-button:active {
     background-color: #6E76B7;
     color: #fff;
