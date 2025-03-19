@@ -24,16 +24,15 @@ body {
 }
 
 h1 {
-    font-family: 'PixelifySans', sans-serif;
     font-size: 28px;
-    font-weight: bold; 
-
+    font-weight: bold;
 }
-p{
+
+p {
     font-size: 20px;
 }
 
-p1{
+.small-text {
     font-family: 'DM Sans', sans-serif;
     font-size: 10px;
 }
@@ -50,10 +49,10 @@ p1{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-top: 30px;
+    margin-top: 10px;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    /* transition: background-color 0.3s ease; */
 }
 
 .start-button:hover {
@@ -77,6 +76,11 @@ p1{
 }
 
 .answers-button:hover {
+    background-color: #6E76B7;
+    color: #fff;
+}
+
+.answers-button:active {
     background-color: #6E76B7;
     color: #fff;
 }
@@ -194,11 +198,6 @@ question-image {
 
 footer {
     text-align: center;
-}
-
-footer p {
-    font-size: 10px; 
-    color: #843b62;
 }
 
 

@@ -197,7 +197,7 @@ const resultOptions = {
     "ENFP": { image: "8Mor.png" },
     "ISTJ": { image: "9Azriel.png", },
     "ISFJ": { image: "10Tamlin.png" },
-    "ESTJ": { image: "11Hybern.png" },
+    "ESTJ": { image: "11Ianthe.png" },
     "ESFJ": { image: "12Lucien.png" },
     "ISTP": { image: "13Thesan.png" },
     "ISFP": { image: "14Feyre.png" },
