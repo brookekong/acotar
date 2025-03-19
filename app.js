@@ -1,4 +1,4 @@
-//Questions to Determine ACOTAR Character
+// ============================ Questions to Determine Character ============================
 
 const questions = [
     {
@@ -184,7 +184,7 @@ const questions = [
     },
 ];
 
-//MBTI and Character Match Up!
+// ============================ Personality and Character Match Up ===========================
 
 const resultOptions = {
     "INTJ": { image: "1Nesta.png" },
@@ -205,16 +205,30 @@ const resultOptions = {
     "ESFP": { image: "16Cassian.png" },
 };
 
-let currentQuestion = 0;
+// ============================ Global Variables ============================
 
+let questionIndex = 0;
+let answerScores = {};
 
-function displayQuestion() {
+// ============================ Start Button Event Listener ============================
+
+document.getElementById('start-button').addEventListener('click', function() {
+    document.getElementById('start-page').style.display = 'none';
+    document.getElementById('quiz-page').style.display = 'block';
+    questionIndex = 0;
+    answerScores = {};
+    renderNextQuestion(); 
+});
+
+// ============================ Render Next Question Function ============================
+
+function renderNextQuestion() {
     const quizElement = document.getElementById('quiz');
-    const question = questions[currentQuestion];
+    const question = questions[questionIndex];
     if (question) {
         let html = `<p>${question.question}</p>`;
         if (question.image) {
-            html += `<img src="${question.image}" alt="Question ${currentQuestion + 1}">`;
+            html += `<img src="${question.image}" alt="Question ${questionIndex + 1}">`;
         }
         for (const option in question.answers) {
             html += `<button class="answers-button" value="${option}" id="${option}">${question.answers[option].text}</button>`;
@@ -226,16 +240,7 @@ function displayQuestion() {
     }
 }
 
-
-document.getElementById('start-button').addEventListener('click', function() {
-    document.getElementById('start-page').style.display = 'none';
-    document.getElementById('quiz-page').style.display = 'block';
-    currentQuestion = 0;
-    userAnswers = {};
-    displayQuestion(); 
-});
-
-
+// ============================ Attach Button Click Handlers ============================
 
 function attachButtonClickHandlers() {
     const choiceButtons = document.querySelectorAll('.answers-button');
@@ -244,26 +249,27 @@ function attachButtonClickHandlers() {
     });
 }
 
-
+// ============================ Handle Answer Function ============================
 
 function handleAnswer(event) {
     const selectedOption = event.target;
     const answerKey = selectedOption.value;
-    const question = questions[currentQuestion];
+    const question = questions[questionIndex];
     const answer = question.answers[answerKey];
 
     for (const dimension in answer.scores) {
-        userAnswers[dimension] = (userAnswers[dimension] || 0) + answer.scores[dimension];
+        answerScores[dimension] = (answerScores[dimension] || 0) + answer.scores[dimension];
     }
 
-    if (currentQuestion < questions.length - 1) {
-        currentQuestion++;
-        displayQuestion();
+    if (questionIndex < questions.length - 1) {
+        questionIndex++;
+        renderNextQuestion();
     } else {
         showResult();
     }
 }
 
+// ============================ Show Result Function ============================
 
 function showResult() {
     const resultElement = document.getElementById('result');
@@ -274,7 +280,7 @@ function showResult() {
     const pairs = ["IE", "NS", "TF", "PJ"];
     pairs.forEach(pair => {
         const options = pair.split('');
-        const scores = options.map(option => userAnswers[option] || 0);
+        const scores = options.map(option => answerScores[option] || 0);
         const topOptionIndex = scores.indexOf(Math.max(...scores));
         const topOption = options[topOptionIndex];
         topLetters[pair] = topOption;
