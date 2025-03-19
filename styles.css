@@ -114,7 +114,7 @@ p {
     background-color: #6674F4;
 }
 
-/* ============================== Containers ============================== */
+/* ============================== Containers (Need to rename) ============================== */
 
 #result {
     display: none;
@@ -181,7 +181,6 @@ p {
 
 .result-image img {
     max-width: 360px;
-    /* max-height: 400px; - can add this in the future if needed */
     height: auto;
     margin: 4px;
     margin-top: 20px;

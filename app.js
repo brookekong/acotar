@@ -87,7 +87,7 @@ const questions = [
     },
     {
         question: "7/12: Rhysand tells you that the future of Prythian rests on your shoulders. He will enlist his inner circle to train you starting tomorrow.",
-        image: "img/Velaris.jpeg",
+        image: "img/7Question.jpeg",
         answers: {
             F: {
                 text: "AHH I need to save everyone here?! I can't let them down!",
@@ -129,7 +129,7 @@ const questions = [
     },
     {
         question: "10/12: You finally manifest a shadow out of your hand. The group cheers and Feyre says that you're done with training for the day.",
-        image: "img/Velaris.jpeg",
+        image: "img/10Question.jpeg",
         answers: {
             E: {
                 text: "You guys hungry? Let's get something to eat.",
