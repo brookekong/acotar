@@ -27,7 +27,6 @@ body {
 
 h1 {
     font-size: 30px;
-    font-weight: bold;
 }
 
 p {
@@ -41,7 +40,7 @@ p {
 
 /* ============================== Buttons ============================== */
 
-.start-button {
+.begin-button {
     display: inline-block;
     padding: 16px 30px;
     margin-top: 10px;
@@ -49,7 +48,7 @@ p {
     background-color: #6A4773;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
 
     font-family: 'PixelifySans', sans-serif;
     font-size: 18px;
@@ -59,22 +58,22 @@ p {
     cursor: pointer;
 }
 
-.start-button:hover {
+.begin-button:hover {
     background-color: #A78DB0;
     color: #000;
 }
 
 .answers-button {
     display: block;
-    width: 80%;
+    width: 85%;
     max-width: 400px;
     margin: 10px auto;
-    padding: 10px 20px;
+    padding: 12px 18px;
     
     background-color: #A78DB0;
     color: #000;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
@@ -125,8 +124,15 @@ p {
 }
 
 #result p {
-    font-size: 18px;
+    font-size: 20px;
     margin: 10px 0;
+}
+
+.result-image img {
+    max-width: 360px;
+    height: auto;
+    margin: 4px;
+    margin-top: 20px;
 }
 
 #quiz {
@@ -146,7 +152,7 @@ p {
     font-size: 24px;
 }
 
-.quiz-container {
+.quiz-box {
     border-radius: 10px;
     width: 90%;
     max-width: 400px;
@@ -159,31 +165,6 @@ p {
     font-family: 'PixelifySans', sans-serif;
     font-size: 20px;
     font-weight: bold;
-}
-
-.result-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.result-text {
-    flex-grow: 1;
-}
-
-.result-image-container {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.result-image img {
-    max-width: 360px;
-    height: auto;
-    margin: 4px;
-    margin-top: 20px;
 }
 
 /* ============================== Media Queries ============================== */

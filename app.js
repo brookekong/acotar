@@ -212,7 +212,7 @@ let answerScores = {};
 
 // ============================ Start Button Event Listener ============================
 
-document.getElementById('start-button').addEventListener('click', function() {
+document.getElementById('begin-button').addEventListener('click', function() {
     document.getElementById('start-page').style.display = 'none';
     document.getElementById('quiz-page').style.display = 'block';
     questionIndex = 0;
@@ -235,8 +235,6 @@ function renderNextQuestion() {
         }
         quizElement.innerHTML = html;
         attachButtonClickHandlers();
-    } else {
-    
     }
 }
 
@@ -273,7 +271,6 @@ function handleAnswer(event) {
 
 function showResult() {
     const resultElement = document.getElementById('result');
-    const resultTextContainer = document.querySelector('.result-text');
     const resultImage = document.getElementById('result-image');
     const topLetters = {};
 
@@ -288,14 +285,10 @@ function showResult() {
 
     const result = pairs.map(pair => topLetters[pair]).join('');
 
-    const personalityData = resultOptions[result];
+    const characterMatch = resultOptions[result];
     
-    if (personalityData) {
-        resultTextContainer.innerHTML = `
-        `;
-
-        resultImage.src = "img/"+personalityData.image;
-        resultImage.alt = `${personalityData.image} Image`;
+    if (characterMatch) {
+        resultImage.src = "img/"+characterMatch.image;
     }
 
     document.getElementById('quiz').style.display = 'none';
