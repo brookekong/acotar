@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    background-color: #D8E7FF;
+    background-color: #D9D0DD;
 
     font-family: 'PixelifySans', sans-serif;
     font-size: 22px;
@@ -46,13 +46,13 @@ p {
     padding: 18px 30px;
     margin-top: 10px;
 
-    background-color: #072046;
-    color: #ffffff;
+    background-color: #6A4773;
+    color: #fff;
     border: none;
     border-radius: 5px;
 
     font-family: 'PixelifySans', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     text-decoration: none;
 
@@ -60,8 +60,8 @@ p {
 }
 
 .start-button:hover {
-    background-color: #6E76B7;
-    color: #090808;
+    background-color: #A78DB0;
+    color: #000;
 }
 
 .answers-button {
@@ -71,8 +71,8 @@ p {
     margin: 10px auto;
     padding: 10px 20px;
     
-    background-color: #FAB7B1;
-    color: rgb(0, 0, 0);
+    background-color: #A78DB0;
+    color: #000;
     border: none;
     border-radius: 5px;
     
@@ -84,7 +84,7 @@ p {
 
 .answers-button:hover, 
 .answers-button:active {
-    background-color: #6E76B7;
+    background-color: #6A4773;
     color: #fff;
 }
 
@@ -92,18 +92,17 @@ p {
     display: inline-block;
     width: 100px;
     height: 80px;
-    padding: 20px;
+    padding: 18px;
     margin-top: 10px;
     
-    background-color: #072046;
+    background-color: #6A4773;
     color: #fff;
     border: none;
     border-radius: 10%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     
     font-family: 'PixelifySans', sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.25;
     text-align: center;
     text-decoration: none;
     
@@ -111,7 +110,8 @@ p {
 }
 
 .explore-button:hover {
-    background-color: #6674F4;
+    background-color: #A78DB0;
+    color: #000;
 }
 
 /* ============================== Containers (Need to rename) ============================== */
@@ -121,7 +121,7 @@ p {
     padding: 10px;
     width: 90%;
     max-width: 400px;
-    background-color: #D8E7FF;
+    background-color: #D9D0DD;
 }
 
 #result p {
@@ -152,7 +152,7 @@ p {
     max-width: 400px;
     text-align: center;
     
-    background-color: #D8E7FF;
+    background-color: #D9D0DD;
     color: #0b032d;
     padding: 20px;
     
