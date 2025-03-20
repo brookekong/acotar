@@ -17,14 +17,14 @@ const questions = [
     },
     {
         question: "2/12: The beast claims that it is going to take you away to a place called Prythian.",
-        image: "img/2Question.jpeg",
+        image: "img/2Question.png",
         answers: {
             P: {
-                text: "Cool. I'll follow you!",
+                text: "Cool let's go. I'll follow you!",
                 scores: { J: 0, P: +1 },
             },
             J: {
-                text: "Hold on...let me pack my bags. And call out of work first!",
+                text: "Hold on...let me pack my bags. And call out of work!",
                 scores: { J: +1, P: 0 },
             },
         },
@@ -59,7 +59,7 @@ const questions = [
     },
     {
         question: "5/12: The male introduces himself as Rhysand, High Lord of the Night Court. He tells you that your father was High Fae and highly respected in the Night Court as a general.",
-        image: "img/5Question.jpeg",
+        image: "img/5Question.png",
         answers: {
             E: {
                 text: "Wha- tell me more! Let's talk about this! Can you show me more of this place?",
@@ -87,7 +87,7 @@ const questions = [
     },
     {
         question: "7/12: Rhysand tells you that the future of Prythian rests on your shoulders. He will enlist his inner circle to train you starting tomorrow.",
-        image: "img/7Question.jpeg",
+        image: "img/7Question.png",
         answers: {
             F: {
                 text: "AHH I need to save everyone here?! I can't let them down!",
@@ -129,7 +129,7 @@ const questions = [
     },
     {
         question: "10/12: You finally manifest a shadow out of your hand. The group cheers and Feyre says that you're done with training for the day.",
-        image: "img/10Question.jpeg",
+        image: "img/10Question.png",
         answers: {
             E: {
                 text: "You guys hungry? Let's get something to eat.",
@@ -144,7 +144,7 @@ const questions = [
     },
     {
         question: "11/12: At night, Rhysand and Feyre bring you to the castle balcony and reveal that you have one month to prepare yourself for war and master your powers.",
-        image: "img/11Question.jpeg",
+        image: "img/11Question.png",
         answers: {
             J: {
                 text: "One month? You better have a training plan prepped for me.",
@@ -172,12 +172,12 @@ const questions = [
     },
     {
         question: "13/12: You are falling...falling...falling...and you wake up in your bed with a JOLT.",
-        image: "img/13Question.jpeg",
+        image: "img/13Question.png",
         answers: {
-            K: {
+            Y: {
                 text: "Aww mannnnnn...I was just getting to the good part.",
             },
-            U: {
+            Z: {
                 text: "Oh thank goodness, it was just a dream.",
             },
         },
