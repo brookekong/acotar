@@ -217,14 +217,21 @@ document.getElementById('begin-button').addEventListener('click', function() {
     document.getElementById('quiz-page').style.display = 'block';
     questionIndex = 0;
     answerScores = {};
+    updateProgressBar(); // Reset progress to 0% when quiz starts
     renderNextQuestion(); 
 });
 
 // ============================ Render Next Question Function ============================
 
+function updateProgressBar() {
+    const progress = ((questionIndex + 1) / questions.length) * 100;
+    document.getElementById("progress-bar").style.width = progress + "%";
+}
+
 function renderNextQuestion() {
     const quizElement = document.getElementById('quiz');
     const question = questions[questionIndex];
+
     if (question) {
         let html = `<p>${question.question}</p>`;
         if (question.image) {
@@ -235,6 +242,7 @@ function renderNextQuestion() {
         }
         quizElement.innerHTML = html;
         attachButtonClickHandlers();
+        updateProgressBar(); // Update progress bar here
     }
 }
 

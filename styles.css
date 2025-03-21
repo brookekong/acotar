@@ -167,6 +167,22 @@ p {
     font-weight: bold;
 }
 
+#progress-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 10px;
+    margin-bottom: 15px;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #7b3f8f; /* Adjust color to match your theme */
+    transition: width 0.3s ease-in-out;
+}
+
 /* ============================== Media Queries ============================== */
 
 @media (max-width: 768px) {
